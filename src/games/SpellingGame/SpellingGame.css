@@ -1,0 +1,51 @@
+.spelling-container {
+  max-width: 400px;
+  margin: auto;
+  background: #fdfaf6;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.level-badge {
+  background: orange;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.audio-btn {
+  background: #ffc107;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.feedback {
+  font-size: 18px;
+  margin-top: 10px;
+}

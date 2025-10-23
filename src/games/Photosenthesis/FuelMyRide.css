@@ -1,0 +1,156 @@
+.fuel-game {
+  background: #fefce8;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.dog-narrator {
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #4b5563;
+}
+
+.xp-bar-wrap {
+  margin: 1rem auto;
+  width: 80%;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.xp-bar {
+  height: 100%;
+  background: linear-gradient(to right, #fbbf24, #f59e0b);
+  transition: width 0.3s ease-in-out;
+}
+
+.sunlight-game {
+  margin-top: 2rem;
+}
+
+.sunbeam-zone {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.sunbeam {
+  font-size: 2rem;
+  cursor: pointer;
+  animation: floatDown 1.5s ease-in-out infinite;
+}
+
+@keyframes floatDown {
+  0% { transform: translateY(-10px); }
+  50% { transform: translateY(5px); }
+  100% { transform: translateY(-10px); }
+}
+
+.level-complete {
+  margin-top: 2rem;
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  background: #10b981;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.water-level {
+  margin-top: 2rem;
+}
+
+.drop-source {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.drop {
+  font-size: 2rem;
+  cursor: grab;
+}
+
+.drop-target {
+  background: #e0f2fe;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px dashed #38bdf8;
+  width: 300px;
+  margin: auto;
+  min-height: 100px;
+}
+
+.tank-contents {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+.co2-level {
+  margin-top: 2rem;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.bubble-area {
+  position: relative;
+  height: 100%;
+}
+
+.bubble {
+  position: absolute;
+  background: #c7d2fe;
+  color: #1e3a8a;
+  border-radius: 50%;
+  padding: 0.6rem;
+  cursor: pointer;
+  font-weight: bold;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+.glucose-drive {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.reaction-row {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+
+.car-track {
+  margin-top: 2rem;
+  height: 60px;
+  background: #bbf7d0;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.leaf-car {
+  position: absolute;
+  animation: driveAcross 3s linear forwards;
+  font-size: 2rem;
+  top: 10px;
+  left: 0;
+}
+
+@keyframes driveAcross {
+  from { left: -60px; }
+  to { left: 100%; }
+}

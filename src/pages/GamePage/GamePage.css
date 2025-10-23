@@ -1,0 +1,131 @@
+.game-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  font-family: 'Martian Mono', monospace;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.game-page {
+  flex: 1;
+  padding: 3rem 4rem;
+  background: white;
+  color: #4a148c;
+  border-radius: 25px;
+  margin-left: 220px;
+  max-width: 1200px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed ~ .game-page {
+  margin-left: 70px;
+}
+
+/* === Game Cards === */
+/* .game-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+} */
+
+.game-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.game_card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #fff2f2;
+  border: 2px solid #ce93d8;
+  box-shadow: 0 6px 16px rgba(126, 87, 194, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+  cursor: pointer;
+}
+
+.game_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(126, 87, 194, 0.2);
+}
+
+/* === Thumbnail and Text === */
+.game_thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.game_details {
+  flex: 1;
+  text-align: left;
+}
+
+.game_title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4a148c;
+}
+
+.game_subject {
+  margin: 4px 0;
+  color: #7e57c2;
+  font-size: 0.95rem;
+}
+
+/* === Progress === */
+.progress_container {
+  background: linear-gradient(145deg, #ede7f6, #e1f5fe);
+  border-radius: 8px;
+  height: 12px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.progress_bar {
+  height: 100%;
+  background: linear-gradient(90deg, #7e57c2, #9575cd);
+  transition: width 0.3s ease-in-out;
+}
+
+.progress_text {
+  font-size: 0.85rem;
+  color: #512da8;
+  font-weight: 500;
+}
+
+/* === Body override === */
+.body {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

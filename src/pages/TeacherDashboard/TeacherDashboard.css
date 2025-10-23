@@ -1,0 +1,114 @@
+.teacher-dashboard {
+  padding: 2rem;
+  background: #f9fafb;
+  min-height: 100vh;
+  color: #111827;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.teacher-dashboard h2,
+.teacher-dashboard h3 {
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.teacher-dashboard form,
+.class-overview,
+.analytics,
+.chart-area,
+.leaderboard,
+.trend-charts,
+.heatmap,
+.activity-feed,
+.motivation-box {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.teacher-dashboard textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.teacher-dashboard button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.teacher-dashboard button:hover {
+  background-color: #2563eb;
+}
+
+.teacher-dashboard select {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.class-overview ul,
+.leaderboard ol,
+.heatmap ul {
+  padding-left: 1.25rem;
+}
+
+.class-overview li,
+.leaderboard li,
+.heatmap li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.analytics ul li {
+  margin-bottom: 0.4rem;
+}
+
+.insights,
+.quiz-preview {
+  background: #ecfdf5;
+  color: #065f46;
+  border-left: 5px solid #10b981;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  border-radius: 8px;
+}
+
+.activity-feed p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #4b5563;
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.heatmap span {
+  border-radius: 4px;
+}
+
+.motivation-box textarea {
+  min-height: 80px;
+  margin-bottom: 1rem;
+}

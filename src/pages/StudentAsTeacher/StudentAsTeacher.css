@@ -1,0 +1,223 @@
+/* General layout */
+.teacher-mode {
+  min-height: 100vh;
+  height: 100vh;
+  background: #1e293b;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Question box if reused */
+.question-box {
+  background: #334155;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Input styling (fill-in-the-blank) */
+input {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+}
+
+.blank-input {
+  margin: 0 0.3rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  width: 100px;
+}
+
+/* Button */
+button,
+.submit-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover,
+.submit-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Choice buttons */
+.choice-btn {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  transition: background-color 0.3s;
+}
+
+.choice-btn:hover {
+  background-color: #2563eb;
+}
+
+.choice-btn.correct {
+  background-color: #22c55e;
+}
+
+.choice-btn.incorrect {
+  background-color: #ef4444;
+}
+
+/* Correct/incorrect messages */
+.correct-msg,
+.incorrect-msg {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #fbbf24;
+}
+
+/* Drag reorder section */
+.drag-reorder {
+  margin-top: 1.5rem;
+}
+
+.drag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem 0;
+}
+
+.drag-item {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  cursor: grab;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.drag-item:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+
+/* Image selection (step 4) */
+.image-select-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.image-option {
+  background-color: #334155;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 140px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.image-option:hover {
+  transform: scale(1.05);
+}
+
+.image-option img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.image-option.correct {
+  border: 3px solid #22c55e;
+}
+
+.image-option.incorrect {
+  border: 3px solid #ef4444;
+}
+
+/* XP & Progress Bar (optional) */
+.progress-stats {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.xp-bar {
+  width: 100%;
+  height: 10px;
+  background: #334155;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 0.4rem;
+}
+
+.xp-fill {
+  height: 100%;
+  background: linear-gradient(to right, #22c55e, #3b82f6);
+  transition: width 0.3s ease-in-out;
+}
+/* Add these styles to your existing CSS file */
+
+.drag-item {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  cursor: grab;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  margin: 0.3rem;
+}
+
+.drag-item:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+
+.drag-item.dragging {
+  opacity: 0.5;
+}
+
+.drag-item.drag-over {
+  border: 2px dashed #fbbf24;
+}
+
+.drag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem;
+  min-height: 60px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}

@@ -1,0 +1,29 @@
+.game {
+  background: #111827;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.question-box {
+  background: #1f2937;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.answers button {
+  padding: 1rem;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}

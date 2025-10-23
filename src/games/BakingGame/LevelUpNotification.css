@@ -1,0 +1,107 @@
+/* LevelUpNotification.css */
+
+.level-up-notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 90%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid #ffd700;
+}
+
+.level-up-notification.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.level-up-badge {
+  font-size: 60px;
+  margin-bottom: 15px;
+  animation: badge-pulse 2s infinite;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.level-up-text h2 {
+  font-size: 32px;
+  margin: 0 0 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.level-up-text p {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.xp-gain {
+  font-size: 24px !important;
+  font-weight: bold;
+  color: #ffd700;
+  margin-top: 15px !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes badge-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add sparkles around the notification */
+.level-up-notification::before,
+.level-up-notification::after {
+  content: "✨";
+  position: absolute;
+  font-size: 30px;
+  animation: sparkle 1.5s infinite;
+}
+
+.level-up-notification::before {
+  top: -15px;
+  left: -15px;
+  animation-delay: 0.2s;
+}
+
+.level-up-notification::after {
+  bottom: -15px;
+  right: -15px;
+  animation-delay: 0.7s;
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) rotate(360deg);
+  }
+}

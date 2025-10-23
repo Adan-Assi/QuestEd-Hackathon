@@ -1,0 +1,37 @@
+.progress-map {
+  display: flex;
+  justify-content: space-between;
+  background: #fff2f2;
+  border: 2px solid #ce93d8;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+  overflow-x: auto;
+  font-family: 'Martian Mono', monospace;
+  box-shadow: 0 10px 30px rgba(126, 87, 194, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.progress-map:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(126, 87, 194, 0.15);
+}
+
+.checkpoint {
+  text-align: center;
+  opacity: 0.4;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  color: #4a148c;
+}
+
+.checkpoint.active {
+  opacity: 1;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  color: #9575cd;
+}

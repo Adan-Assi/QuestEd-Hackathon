@@ -1,0 +1,73 @@
+.game_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  padding: 16px;
+  margin: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.game_card:hover {
+  transform: scale(1.02);
+}
+
+.game_thumbnail_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.game_thumbnail {
+  width: 120px;
+  height: 120px;
+  object-fit: cover; /* use cover instead of fill for better aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.game_title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.progress_container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.progress_bar {
+  height: 10px;
+  background-color: #4caf50;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress_text {
+  font-size: 12px;
+  color: #444;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.game_subject {
+  font-size: 14px;
+  color: #666;
+    text-align:left;
+
+}
+.game_subjectr {
+  margin-right: 150px;
+  /*text-align:left;*/
+}
