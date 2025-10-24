@@ -125,8 +125,8 @@ To run the project locally, follow these steps:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Adan-Assi/QuestEd.git
-   cd QuestEd
+   git clone https://github.com/Adan-Assi/QuestEd-Hackathon.git
+   cd QuestEd-Hackathon
    ```
 
 2. **Create your `.env` file and add your API key**
@@ -171,7 +171,7 @@ Keep this terminal open — do **not** close or stop it.
 #### 🌐 Terminal 2 — Run the Frontend
 Open a **new terminal window/tab**, then:
 ```bash
-cd QuestEd
+cd QuestEd-Hackathon
 npm start
 ```
 After a few seconds, your browser should automatically open at:
