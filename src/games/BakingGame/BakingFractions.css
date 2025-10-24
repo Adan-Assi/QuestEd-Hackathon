@@ -228,7 +228,7 @@
 }
 
 .submit-button-bake {
-  background-color: #ffb870;
+  background: #ffb870;
   color: #5a3e36;
   border: none;
   border-radius: 50px;
@@ -246,7 +246,7 @@
 }
 
 .submit-button-bake:hover {
-  background-color: #ffa54f;
+  background: #ffa54f;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
@@ -285,7 +285,7 @@
 }
 
 .feedback-message button {
-  background-color: #5ecece;
+  background: #5ecece;
   color: white;
   border: none;
   border-radius: 20px;
@@ -298,7 +298,7 @@
 }
 
 .feedback-message button:hover {
-  background-color: #4db8b8;
+  background: #4db8b8;
   transform: translateY(-2px);
 }
 
